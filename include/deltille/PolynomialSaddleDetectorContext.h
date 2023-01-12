@@ -255,7 +255,7 @@ private:
     if (img.getMat().channels() == 3)
       // convert to a single channel first, keep original intensity range for
       // now...
-      cvtColor(img, gray_img, CV_RGB2GRAY);
+      cvtColor(img, gray_img, cv::COLOR_RGB2GRAY);
     else
       gray_img = img.getMat();
 

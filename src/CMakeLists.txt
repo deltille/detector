@@ -14,7 +14,7 @@
 ## License along with this library; if not, write to the Free Software
 ## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
-find_package(OpenCV 3 CONFIG REQUIRED COMPONENTS core highgui imgproc imgcodecs) 
+find_package(OpenCV 4 CONFIG REQUIRED COMPONENTS core highgui imgproc imgcodecs) 
 add_library(opencv INTERFACE IMPORTED)
 set_target_properties(opencv PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${OpenCV_INCLUDE_DIRS}"
